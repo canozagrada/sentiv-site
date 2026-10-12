@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sentiv Privacy Policy</title>
+<meta name="description" content="How Sentiv handles your data: logs stay on your device; personal information is removed on-device before insights are generated.">
+<style>
+  :root {
+    --bg: #f7fafc;
+    --surface: #ffffff;
+    --text: #1a202c;
+    --muted: #4a5568;
+    --accent: #2b6cb0;
+    --border: #e2e8f0;
+    --callout: #ebf5ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1a202c;
+      --surface: #2d3748;
+      --text: #e2e8f0;
+      --muted: #a0aec0;
+      --accent: #63b3ed;
+      --border: #4a5568;
+      --callout: #2a4365;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1a202c;
+    --surface: #2d3748;
+    --text: #e2e8f0;
+    --muted: #a0aec0;
+    --accent: #63b3ed;
+    --border: #4a5568;
+    --callout: #2a4365;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  nav.lang { display: flex; gap: 12px; margin-bottom: 24px; font-size: 15px; }
+  a { color: var(--accent); }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 4px; }
+  h2 { font-size: 20px; margin: 32px 0 8px; }
+  .meta { color: var(--muted); margin: 0 0 24px; }
+  .summary {
+    background: var(--callout);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 0 0 8px;
+  }
+  .summary ul { margin: 8px 0 0; padding-left: 20px; }
+  section.policy {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px 20px;
+    margin-bottom: 32px;
+  }
+  li { margin-bottom: 6px; }
+  hr { border: 0; border-top: 1px solid var(--border); margin: 32px 0; }
+</style>
+</head>
+<body>
+<main>
+  <nav class="lang" aria-label="Language">
+    <a href="#en">English</a>
+    <a href="#es" hreflang="es-419">Español</a>
+  </nav>
+
+  <!-- ============================ ENGLISH ============================ -->
+  <section class="policy" id="en" lang="en">
+    <h1>Sentiv Privacy Policy</h1>
+    <p class="meta">Effective October 11, 2026</p>
+
+    <div class="summary">
+      <strong>The short version</strong>
+      <ul>
+        <li>Your logs are stored only on your device. Sentiv has no accounts and no servers of its own.</li>
+        <li>Data leaves your device only when you tap <em>Generate Insights</em>. It is sent to Google's Gemini AI service after emails, phone numbers, links, addresses and the private words you choose are removed on your device.</li>
+        <li>No ads, no analytics, no tracking, and we never sell your data.</li>
+      </ul>
+    </div>
+
+    <h2>Who we are</h2>
+    <p>Sentiv is developed by Marco-Antonio Cervantez ("we", "us"). For questions about this policy or for support, email <a href="mailto:sentiv.app@gmail.com">sentiv.app@gmail.com</a>.</p>
+
+    <h2>What Sentiv stores on your device</h2>
+    <ul>
+      <li><strong>Your logs:</strong> the state you choose for body, mind and spirit, the date and time, optional notes, and whether you marked medication or a meal.</li>
+      <li><strong>Things you add:</strong> custom states, your "About You" text, and your private words list.</li>
+      <li><strong>Patterns computed from your logs</strong>, such as how often you log and recurring highs and lows.</li>
+      <li><strong>Preferences:</strong> theme, language, which tips you've seen, and privacy settings.</li>
+      <li><strong>App lock:</strong> if you set a PIN, it is kept in your device's secure storage (iOS Keychain or Android Keystore).</li>
+    </ul>
+    <p>This information stays on your device. We do not have a copy and cannot access it.</p>
+
+    <h2>When data leaves your device: insights</h2>
+    <p>Only when you tap <em>Generate Insights</em>, Sentiv sends a request directly from your device to Google's Gemini API over an encrypted (HTTPS) connection. The request contains:</p>
+    <ul>
+      <li>State names with their days and times, and medication or meal markers, for the period you selected.</li>
+      <li>Log counts and recurring patterns computed on your device.</li>
+      <li>Your notes (unless you turn off <em>Settings → Privacy → Include notes in insights</em>), your custom state names, and your "About You" text.</li>
+    </ul>
+    <p><strong>Before anything is sent, Sentiv removes personal information on your device:</strong> email addresses, phone and other long ID numbers, links, social media handles, street addresses, and any words you add to <em>Settings → Privacy → Private words</em> (for example, names of people or places). Removal is automatic but not perfect. Names you haven't added to your private words list are not detected, so add any you want kept private.</p>
+    <p>Never sent: your PIN, contacts, location, photos, device identifiers or advertising identifiers. As with any internet request, Google receives your device's IP address. Sentiv does not receive or store a copy of the request or Google's response.</p>
+    <p>Google processes this request under the <a href="https://ai.google.dev/gemini-api/terms">Gemini API Additional Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Under those terms, Google may use content sent through the Gemini API to provide and improve its products, which may include review by trained human reviewers. Because of this, Sentiv removes the personal information described above before sending, and you can leave notes out entirely. If you prefer not to share any log data, simply don't use <em>Generate Insights</em>; everything else in Sentiv works without it.</p>
+
+    <h2>Exporting and importing</h2>
+    <p>When you export, Sentiv creates a file with your logs and opens your device's share options so you can choose where to save or send it. The export file is <strong>not encrypted</strong> yet, so store it somewhere you trust. Importing reads a file you choose. We never receive your exports.</p>
+
+    <h2>Notifications</h2>
+    <p>Any reminders Sentiv shows are scheduled locally on your device. There is no push notification server.</p>
+
+    <h2>No tracking, ads or sale of data</h2>
+    <p>Sentiv contains no advertising, analytics or tracking tools, and we do not sell or share your personal information. Apple or Google may collect crash and usage data according to your device settings; that is governed by their policies. If you test Sentiv through TestFlight, Apple shares the feedback, screenshots and crash reports you choose to submit with us.</p>
+
+    <h2>Health-related information</h2>
+    <p>Your logs can reflect your wellbeing and whether you took medication. We treat this information as sensitive: it stays on your device, and it is only sent, after removal of personal information, when you request insights. It is never used for advertising. Sentiv is a self-reflection tool, not a medical device, and does not provide medical advice, diagnosis or treatment.</p>
+
+    <h2>Keeping and deleting your data</h2>
+    <ul>
+      <li>Your data stays on your device until you delete it.</li>
+      <li>Delete a log by swiping it left on the Home screen. Remove learned patterns in <em>Settings → Learned Patterns</em>.</li>
+      <li>Uninstalling Sentiv deletes all of its data from your device.</li>
+      <li>Data sent to Google for insights is kept according to Google's terms linked above.</li>
+    </ul>
+
+    <h2>Children</h2>
+    <p>Sentiv is not directed at children under 13 (or the minimum age required in your country), and we do not knowingly collect their information.</p>
+
+    <h2>Your rights</h2>
+    <p>Depending on where you live (for example under the GDPR, California privacy laws, Brazil's LGPD or Mexico's data protection law), you may have rights to access, correct or delete your personal information. Because Sentiv keeps your data on your device, you can view, change and delete it directly in the app. For anything else, contact us at the email above.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, we will update the effective date above. Significant changes will also be noted in the app's release notes.</p>
+
+    <h2>Contact and support</h2>
+    <p>Questions, feedback or help: <a href="mailto:sentiv.app@gmail.com">sentiv.app@gmail.com</a>.</p>
+  </section>
+
+  <!-- ============================ ESPAÑOL ============================ -->
+  <section class="policy" id="es" lang="es-419">
+    <h1>Política de privacidad de Sentiv</h1>
+    <p class="meta">Vigente desde el 11 de octubre de 2026</p>
+
+    <div class="summary">
+      <strong>En pocas palabras</strong>
+      <ul>
+        <li>Tus registros se guardan solo en tu dispositivo. Sentiv no tiene cuentas ni servidores propios.</li>
+        <li>Tus datos salen de tu dispositivo solo cuando tocas <em>Generar análisis</em>. Se envían al servicio de IA Gemini de Google después de quitar, en tu dispositivo, correos, números de teléfono, enlaces, direcciones y las palabras privadas que elijas.</li>
+        <li>Sin anuncios, sin analíticas, sin rastreo, y nunca vendemos tus datos.</li>
+      </ul>
+    </div>
+
+    <h2>Quiénes somos</h2>
+    <p>Sentiv es desarrollada por Marco-Antonio Cervantez ("nosotros"). Si tienes preguntas sobre esta política o necesitas ayuda, escribe a <a href="mailto:sentiv.app@gmail.com">sentiv.app@gmail.com</a>.</p>
+
+    <h2>Qué guarda Sentiv en tu dispositivo</h2>
+    <ul>
+      <li><strong>Tus registros:</strong> el estado que eliges para tu cuerpo, tu mente y tu espíritu, la fecha y la hora, notas opcionales, y si marcaste medicamento o comida.</li>
+      <li><strong>Lo que agregas:</strong> estados personalizados, tu texto de "Sobre ti" y tu lista de palabras privadas.</li>
+      <li><strong>Patrones calculados a partir de tus registros</strong>, como cada cuánto registras y tus altibajos recurrentes.</li>
+      <li><strong>Preferencias:</strong> tema, idioma, consejos que ya viste y configuración de privacidad.</li>
+      <li><strong>Bloqueo de la app:</strong> si configuras un PIN, se guarda en el almacenamiento seguro de tu dispositivo (Llavero de iOS o Android Keystore).</li>
+    </ul>
+    <p>Esta información se queda en tu dispositivo. No tenemos una copia y no podemos acceder a ella.</p>
+
+    <h2>Cuándo salen datos de tu dispositivo: el análisis</h2>
+    <p>Solo cuando tocas <em>Generar análisis</em>, Sentiv envía una solicitud directamente desde tu dispositivo a la API de Gemini de Google mediante una conexión cifrada (HTTPS). La solicitud contiene:</p>
+    <ul>
+      <li>Los nombres de los estados con sus días y horas, y las marcas de medicamento o comida, del período que elegiste.</li>
+      <li>La cantidad de registros y los patrones recurrentes calculados en tu dispositivo.</li>
+      <li>Tus notas (a menos que desactives <em>Configuración → Privacidad → Incluir notas en el análisis</em>), los nombres de tus estados personalizados y tu texto de "Sobre ti".</li>
+    </ul>
+    <p><strong>Antes de enviar cualquier dato, Sentiv quita información personal en tu dispositivo:</strong> correos electrónicos, números de teléfono y otros números de identificación largos, enlaces, usuarios de redes sociales, direcciones y las palabras que agregues en <em>Configuración → Privacidad → Palabras privadas</em> (por ejemplo, nombres de personas o lugares). Esto ocurre de forma automática, pero no es perfecto: los nombres que no agregues a tu lista de palabras privadas no se detectan, así que agrega los que quieras mantener en privado.</p>
+    <p>Nunca se envían: tu PIN, contactos, ubicación, fotos, identificadores del dispositivo ni identificadores publicitarios. Como en cualquier solicitud por internet, Google recibe la dirección IP de tu dispositivo. Sentiv no recibe ni guarda una copia de la solicitud ni de la respuesta de Google.</p>
+    <p>Google procesa esta solicitud según los <a href="https://ai.google.dev/gemini-api/terms">Términos adicionales de la API de Gemini</a> y la <a href="https://policies.google.com/privacy?hl=es-419">Política de privacidad de Google</a>. Según esos términos, Google puede usar el contenido enviado a través de la API de Gemini para ofrecer y mejorar sus productos, lo que puede incluir la revisión por parte de personas capacitadas. Por eso Sentiv quita la información personal descrita arriba antes de enviar, y puedes dejar fuera tus notas por completo. Si prefieres no compartir ningún dato de tus registros, simplemente no uses <em>Generar análisis</em>; todo lo demás en Sentiv funciona sin esa función.</p>
+
+    <h2>Exportar e importar</h2>
+    <p>Al exportar, Sentiv crea un archivo con tus registros y abre las opciones para compartir de tu dispositivo para que elijas dónde guardarlo o enviarlo. El archivo exportado <strong>todavía no está cifrado</strong>, así que guárdalo en un lugar de confianza. Al importar, Sentiv lee el archivo que elijas. Nunca recibimos tus exportaciones.</p>
+
+    <h2>Notificaciones</h2>
+    <p>Los recordatorios que muestra Sentiv se programan localmente en tu dispositivo. No hay un servidor de notificaciones push.</p>
+
+    <h2>Sin rastreo, anuncios ni venta de datos</h2>
+    <p>Sentiv no contiene publicidad ni herramientas de analítica o rastreo, y no vendemos ni compartimos tu información personal. Apple o Google pueden recopilar datos de fallas y de uso según la configuración de tu dispositivo; eso se rige por sus propias políticas. Si pruebas Sentiv con TestFlight, Apple nos comparte los comentarios, capturas de pantalla e informes de fallas que tú decidas enviar.</p>
+
+    <h2>Información relacionada con la salud</h2>
+    <p>Tus registros pueden reflejar tu bienestar y si tomaste medicamentos. Tratamos esta información como sensible: se queda en tu dispositivo y solo se envía, después de quitar la información personal, cuando pides un análisis. Nunca se usa para publicidad. Sentiv es una herramienta de autorreflexión, no un dispositivo médico, y no ofrece consejos, diagnósticos ni tratamientos médicos.</p>
+
+    <h2>Conservación y eliminación de tus datos</h2>
+    <ul>
+      <li>Tus datos se quedan en tu dispositivo hasta que los elimines.</li>
+      <li>Para eliminar un registro, deslízalo hacia la izquierda en la pantalla de Inicio. Puedes quitar patrones aprendidos en <em>Configuración → Patrones aprendidos</em>.</li>
+      <li>Al desinstalar Sentiv se eliminan todos sus datos de tu dispositivo.</li>
+      <li>Los datos enviados a Google para el análisis se conservan según los términos de Google mencionados arriba.</li>
+    </ul>
+
+    <h2>Menores de edad</h2>
+    <p>Sentiv no está dirigida a menores de 13 años (o de la edad mínima que exija tu país), y no recopilamos su información a sabiendas.</p>
+
+    <h2>Tus derechos</h2>
+    <p>Según donde vivas (por ejemplo, la Ley Federal de Protección de Datos Personales en Posesión de los Particulares en México, la LGPD de Brasil, el RGPD o las leyes de privacidad de California), puedes tener derecho a acceder, corregir o eliminar tu información personal. Como Sentiv guarda tus datos en tu dispositivo, puedes verlos, cambiarlos y eliminarlos directamente en la app. Para cualquier otra solicitud, escríbenos al correo de arriba.</p>
+
+    <h2>Cambios a esta política</h2>
+    <p>Si esta política cambia, actualizaremos la fecha de vigencia de arriba. Los cambios importantes también se mencionarán en las notas de la versión de la app.</p>
+
+    <h2>Contacto y ayuda</h2>
+    <p>Preguntas, comentarios o ayuda: <a href="mailto:sentiv.app@gmail.com">sentiv.app@gmail.com</a>.</p>
+  </section>
+</main>
+</body>
+</html>
